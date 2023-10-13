@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color-white: hsla(0, 0%, 100%, 1);
+    --bg-color-blue: hsla(242, 50%, 38%, 1);
+    --title-color: hsla(320, 69%, 42%, 1);
+    --txt-color: hsla(244, 38%, 28%, 1);  
+}
+
+body {
+}
+
+
+.container {
+    height: 100vh;
+    text-align: center;
+}
+
+#astronaut {
+    width: 36rem;
+    height: 37rem;
+    margin-left: 0 3.2rem 1.7rem 3.2rem;
+}
+
+#cards {
+    background-color: var(--bg-color-blue);
+    display: grid;
+}
+
+.card {
+    background-color: var(--bg-color-white);
+    padding: 2.6rem;
+    margin: 5.3rem 4rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 3.3rem;
+
+    border-radius: 2rem;
+
+}
+
+.card img {
+    width: 8rem;
+    height: 8rem;
+}
+
+header h1 {
+    color: var(--title-color);
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+h2 {
+    color: var(--title-color);
+    font-size: 3rem;
+}
+
+p {
+    color: var(--txt-color);
+    font-weight: 600;
+}
+
+header p {
+    font-size: 2rem;  
+}
+
+main p {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+#stars {
+    display: none;
+}
