@@ -23,7 +23,7 @@
         <h1>Explore sem limites</h1>
         <p>Porque o aprendizado é contínuo</p>
         <a href="#cards" class="buttonDown">
-          <img src="./assets/arrowDown.svg" alt="botão apontando para baixo" />
+          <img src="./assets/buttonDown.svg" alt="botão apontando para baixo" />
         </a>
       </header>
       <main id="cards">
@@ -55,13 +55,26 @@
             rumo ao objetivo final.
           </p>
         </section>
-        <form>
+        <form class="contact">
           <h2>Entre em Contato</h2>
-          <input type="text" />
-          <input type="email" />
-          <textarea name="" id="" cols="30" rows="10">
-  Digite sua mensagem aqui...</textarea
-          >
+          <fieldset>
+            <div class="inputWrapper">
+              <input id="name" type="text" placeholder="Seu nome" />
+            </div>
+            <div class="inputWrapper">
+              <input id="email" type="email" placeholder="Email" />
+            </div>
+            <div class="inputWrapper">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Escreva sua mensagem aqui.."
+              >
+              </textarea>
+            </div>
+          </fieldset>
           <button>Enviar Mensagem</button>
         </form>
       </main>
