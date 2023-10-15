@@ -15,14 +15,6 @@
     --txt-color: hsla(244, 38%, 28%, 1);  
 }
 
-body {
-    
-}
-
-header {
-
-}
-
 .container {
     height: 100vh;
     text-align: center;
@@ -113,15 +105,25 @@ fieldset {
     margin: 8rem 11rem 4rem 4rem;
 }
 
-.contact input {
-    padding: 1.2rem 1.6rem 1.2rem 4rem;
+.contact input, 
+.contact textarea {
+    padding: 1.3rem 1.6rem 1.2rem 4.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
     width: 35rem;
     margin: 0 4rem 2.4rem;
     gap: 1.2rem;
     border-radius: 1.6rem;
+    color: var(--txt-color)
 }
 
-.inputWrapper {
+.contact textarea {
+   height: 12.6rem; 
+}
+
+.inputWrapper input {
+    border: 1.5px solid var(--txt-color);
+
 }
 
 #name {
@@ -132,8 +134,55 @@ fieldset {
     background: url(./assets/emailIcon.svg) no-repeat scroll 1.4rem 1.2rem;
 }
 
+#button {
+    color: var(--bg-color-white);
+    background-color: var(--bg-color-blue);
+    border-radius: 1.6rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+    display: inline-flex;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+    transition: filter 200ms;
+    margin: 0 27rem 6.5rem 4rem;
+    max-width: 18rem;
+}
 
+#button:hover {
+    filter: brightness(0.9);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bg-color-blue);
+    height: 6rem;
+}
+
+footer p {
+    color: var(--bg-color-white);
+    padding: 1.6rem;
+    font-size: 2.0rem;
+    font-weight: 600;
+}
 
 #stars {
     display: none;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+    }
+
+    #cards {
+        display: flex;
+    }
 }
