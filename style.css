@@ -1,3 +1,4 @@
+/* Resets */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@
     --txt-color: hsla(244, 38%, 28%, 1);  
 }
 
+
 .container {
     height: 100vh;
     text-align: center;
@@ -28,6 +30,7 @@
 #cards {
     background-color: var(--bg-color-blue);
     display: grid;
+    min-width: 45rem;
 }
 
 .card {
@@ -41,7 +44,6 @@
     text-align: start;
 
     border-radius: 2rem;
-
 }
 
 .card img {
@@ -93,8 +95,6 @@ main p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    flex-shrink: 0;
 }
 
 fieldset {
@@ -107,14 +107,15 @@ fieldset {
 
 .contact input, 
 .contact textarea {
-    padding: 1.3rem 1.6rem 1.2rem 4.4rem;
     font-size: 1.6rem;
     font-weight: 600;
+    color: var(--txt-color);
+    
+    padding: 1.3rem 1.6rem 1.2rem 4.4rem;
     width: 35rem;
     margin: 0 4rem 2.4rem;
     gap: 1.2rem;
     border-radius: 1.6rem;
-    color: var(--txt-color)
 }
 
 .contact textarea {
@@ -136,19 +137,22 @@ fieldset {
 
 #button {
     color: var(--bg-color-white);
+    font-size: 1.4rem;
+
     background-color: var(--bg-color-blue);
-    border-radius: 1.6rem;
+    margin: 0 27rem 6.5rem 4rem;
     height: 4.5rem;
     padding: 1.6rem;
+    
     display: inline-flex;
-    font-size: 1.4rem;
-    flex-shrink: 0;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
     border: 0;
+    border-radius: 1.6rem;
+    
     cursor: pointer;
     transition: filter 200ms;
-    margin: 0 27rem 6.5rem 4rem;
     max-width: 18rem;
 }
 
@@ -157,19 +161,21 @@ fieldset {
 }
 
 footer {
+    background-color: var(--bg-color-blue);
+    min-width: 45rem;
+    height: 6rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    background-color: var(--bg-color-blue);
-    height: 6rem;
 }
 
 footer p {
     color: var(--bg-color-white);
-    padding: 1.6rem;
-    font-size: 2.0rem;
     font-weight: 600;
+    font-size: 2.0rem;
+
+    padding: 1.6rem;
 }
 
 #stars {
@@ -178,11 +184,64 @@ footer p {
 
 
 @media (min-width: 1200px) {
-    .container {
+    
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    header h1, p {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    header h1 {
+        margin: 28rem 0 0 9rem;
+        font-size: 6rem;
+        white-space: nowrap;
+    }
+
+    header p {
+        margin: 36rem 0 0 2rem;
+        font-size: 3.2rem;
+    }
+    
+    #astronaut {
+        grid-area: 1 / 2 / 3 / 3;
+        margin-right: 15rem;
+        height: 72rem;
+        width: auto;
+    }
+
+    .buttonDown {
+        margin: 10rem 50rem 0 10rem;
+    }
+
+    
+    #cards {
         display: flex;
     }
 
-    #cards {
-        display: flex;
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 4.2rem;
+    }
+    
+    .contact input, 
+    .contact textarea {
+        width: 60rem;
+    }
+    
+    #stars {
+        display: inline-block;
+        width: 60rem;
+        height: auto;
+        position: absolute;
+        right: 0;
     }
 }

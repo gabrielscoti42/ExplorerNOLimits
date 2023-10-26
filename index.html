@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>Explore Sem Limites</title>
   </head>
+
   <body>
     <div class="container">
+
       <header>
         <img
           id="astronaut"
@@ -26,6 +28,7 @@
           <img src="./assets/buttonDown.svg" alt="botão apontando para baixo" />
         </a>
       </header>
+
       <main id="cards">
         <section class="card">
           <img src="./assets/yellowMoon.svg" alt="imagem de uma lua amarela" />
@@ -55,36 +58,37 @@
             rumo ao objetivo final.
           </p>
         </section>
-        <form class="contact">
-          <h2>Entre em Contato</h2>
-          <fieldset>
-            <div class="inputWrapper">
-              <input id="name" type="text" placeholder="Seu nome" />
-            </div>
-            <div class="inputWrapper">
-              <input id="email" type="email" placeholder="Email" />
-            </div>
-            <div class="inputWrapper">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Escreva sua mensagem aqui.."
-              >
-              </textarea>
-            </div>
-          </fieldset>
-          <button id="button">Enviar Mensagem</button>
-        </form>
       </main>
+
+      <form class="contact">
+        <div class="contactContainer">
+        <h2>Entre em Contato</h2>
+        <fieldset>
+          <div class="inputWrapper">
+            <input id="name" type="text" placeholder="Seu nome" />
+          </div>
+          <div class="inputWrapper">
+            <input id="email" type="email" placeholder="Email" />
+          </div>
+          <div class="inputWrapper">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escreva sua mensagem aqui.."
+            >
+            </textarea>
+          </div>
+        </fieldset>
+        <button id="button">Enviar Mensagem</button>
+      </div>
+        <img id="stars" src="./assets/stars.svg" alt="imagem de estrelas rosas" />
+      </form>
 
       <footer>
         <p>© 2023 - Rocketseat Explorer</p>
       </footer>
-      <div id="stars">
-        <img src="./assets/stars.svg" alt="imagem de estrelas rosas" />
-      </div>
     </div>
   </body>
 </html>
