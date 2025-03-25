@@ -19,12 +19,12 @@
 
 .container {
     height: 100vh;
+    min-width: 45rem;
     text-align: center;
 }
 
 #astronaut {
     width: 36rem;
-    flex-shrink: 0;
 }
 
 #cards {
@@ -46,11 +46,6 @@
     border-radius: 2rem;
 }
 
-.card img {
-    width: 8rem;
-    height: 8rem;
-}
-
 header h1 {
     color: var(--title-color);
     font-size: 3.2rem;
@@ -65,13 +60,13 @@ h2 {
 }
 
 .card h2 {
-    padding: 0;
     margin: 3.3rem 0 1.5rem;
 }
 
 p {
     color: var(--txt-color);
     font-weight: 600;
+    font-size: 1.6rem;
 }
 
 header p {
@@ -84,10 +79,6 @@ header p {
     margin-bottom: 9.3rem;
 }
 
-main p {
-    font-size: 1.6rem;
-}
-
 .contact {
     background-color: var(--bg-color-white);
     text-align: start;
@@ -97,7 +88,7 @@ main p {
     width: 100%;
 }
 
-fieldset {
+.contact fieldset {
     border: 0;
 }
 
@@ -124,7 +115,6 @@ fieldset {
 
 .inputWrapper input {
     border: 1.5px solid var(--txt-color);
-
 }
 
 #name {
